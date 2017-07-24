@@ -60,7 +60,8 @@ final class ViewController: UIViewController, ARSCNViewDelegate {
     
     func updateResultLabel(_ value: Float) {
         let cm = value * 100.0
-        resultLabel.text = String(format: "%.2f cm", cm)
+        let inch = cm*0.3937007874
+        resultLabel.text = String(format: "%.2f cm / %.2f\"", cm, inch)
     }
     
     func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {
