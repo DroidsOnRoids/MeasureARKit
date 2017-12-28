@@ -19,7 +19,7 @@ final class ViewController: UIViewController, ARSCNViewDelegate {
     
     let session = ARSession()
     let vectorZero = SCNVector3()
-    let sessionConfig: ARSessionConfiguration = ARWorldTrackingSessionConfiguration()
+    let sessionConfig: ARConfiguration = ARWorldTrackingConfiguration()
     var measuring = false
     var startValue = SCNVector3()
     var endValue = SCNVector3()
